@@ -51,13 +51,13 @@ h1 {
 .bracket-container {
     display: grid;
     grid-template-columns:
-        260px   /* Columna 1 – Cuartos */
+        340px   /* Columna 1 – Cuartos */
         40px    /* Col 2 – línea */
         40px    /* Col 3 – línea */
-        260px   /* Col 4 – Semifinales */
+        340px   /* Col 4 – Semifinales */
         40px    /* Col 5 – línea */
         40px    /* Col 6 – línea */
-        260px;  /* Col 7 – Final */
+        340px;  /* Col 7 – Final */
     grid-template-rows: repeat(15, 45px);
     gap: 0;
     width: 1200px;
@@ -117,25 +117,25 @@ h1 {
             <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
         </div>
 
-<!-- Partido 2: filas 5–6 -->
-<div class="match-box" style="grid-column:1; grid-row:5 / 7;">
-    <b>Partido 2</b><br>
-    Equipo C vs Equipo D<br>
-    Fecha: __ | Hora: __ | Marcador: __
+		<!-- Partido 2: filas 5–6 -->
+		<div class="match-box" style="grid-column:1; grid-row:5 / 7;">
+            <div class="match-title"><span class="icon">🏐</span>Partido 2</div>
+            <div class="team-line">Equipo C vs Equipo D</div>
+            <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
-<!-- Partido 3: filas 9–10 -->
-<div class="match-box" style="grid-column:1; grid-row:9 / 11;">
-    <b>Partido 3</b><br>
-    Equipo E vs Equipo F<br>
-    Fecha: __ | Hora: __ | Marcador: __
+		<!-- Partido 3: filas 9–10 -->
+		<div class="match-box" style="grid-column:1; grid-row:9 / 11;">
+            <div class="match-title"><span class="icon">🏐</span>Partido 3</div>
+            <div class="team-line">Equipo E vs Equipo F</div>
+            <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
-<!-- Partido 4: filas 13–14 -->
-<div class="match-box" style="grid-column:1; grid-row:13 / 15;">
-    <b>Partido 4</b><br>
-    Equipo G vs Equipo H<br>
-    Fecha: __ | Hora: __ | Marcador: __
+		<!-- Partido 4: filas 13–14 -->
+		<div class="match-box" style="grid-column:1; grid-row:13 / 15;">
+            <div class="match-title"><span class="icon">🏐</span>Partido 4</div>
+            <div class="team-line">Equipo G vs Equipo H</div>
+            <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
 
@@ -150,12 +150,12 @@ h1 {
 <div class="line-vertical" style="grid-column:2; grid-row:2;"></div>
 <!-- Vertical de P1 (fila 3) -->
 <div class="line-vertical" style="grid-column:2; grid-row:3;"></div>
+<!-- Horizontal hacia semis -->
+<div class="line-horizontal" style="grid-column:3; grid-row:4;"></div>
 <!-- Vertical de P1 (fila 4) -->
 <div class="line-vertical" style="grid-column:2; grid-row:4;"></div>
 <!-- Vertical de P1 (fila 5) -->
 <div class="line-vertical" style="grid-column:2; grid-row:5;"></div>
-<!-- Horizontal hacia semis -->
-<div class="line-horizontal" style="grid-column:3; grid-row:4;"></div>
 <!-- Horizontal hacia semis -->
 <div class="line-horizontal" style="grid-column:2; grid-row:6;"></div>
 
@@ -169,12 +169,12 @@ h1 {
 <div class="line-vertical" style="grid-column:2; grid-row:10;"></div>
 <!-- Vertical de P1 (fila 3) -->
 <div class="line-vertical" style="grid-column:2; grid-row:11;"></div>
+<!-- Horizontal hacia semis -->
+<div class="line-horizontal" style="grid-column:3; grid-row:12;"></div>
 <!-- Vertical de P1 (fila 4) -->
 <div class="line-vertical" style="grid-column:2; grid-row:12;"></div>
 <!-- Vertical de P1 (fila 5) -->
 <div class="line-vertical" style="grid-column:2; grid-row:13;"></div>
-<!-- Horizontal hacia semis -->
-<div class="line-horizontal" style="grid-column:3; grid-row:12;"></div>
 <!-- Horizontal hacia semis -->
 <div class="line-horizontal" style="grid-column:2; grid-row:14;"></div>
 
@@ -185,16 +185,16 @@ h1 {
 
 <!-- Semifinal 1: filas 3–4 -->
 <div class="match-box" style="grid-column:4; grid-row:3 / 5;">
-    <b>Semifinal 1</b><br>
-    Ganador P1 vs Ganador P2<br>
-    Fecha: __ | Hora: __ | Marcador: __
+            <div class="match-title"><span class="icon">🏐</span>Semifinal 1</div>
+            <div class="team-line">Ganador P1 vs Ganador P2</div>
+            <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
 <!-- Semifinal 2: filas 11–12 -->
 <div class="match-box" style="grid-column:4; grid-row:11 / 13;">
-    <b>Semifinal 2</b><br>
-    Ganador P3 vs Ganador P4<br>
-    Fecha: __ | Hora: __ | Marcador: __
+            <div class="match-title"><span class="icon">🏐</span>Semifinal 2</div>
+            <div class="team-line">Ganador P3 vs Ganador P4</div>
+            <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
 
@@ -203,27 +203,37 @@ h1 {
      BRACKETS SEMIFINALES → FINAL (COLUMNAS 5–6)
 ======================================================== -->
 
-<!-- Línea vertical desde S1 -->
+<!-- Horizontal hacia semis -->
+<div class="line-horizontal" style="grid-column:5; grid-row:4;"></div>
+<!-- Vertical de P1 (fila 4) -->
 <div class="line-vertical" style="grid-column:5; grid-row:4;"></div>
-<div class="line-horizontal" style="grid-column:6; grid-row:4;"></div>
-
-<!-- Línea vertical desde S2 -->
-<div class="line-vertical" style="grid-column:5; grid-row:12;"></div>
-<div class="line-horizontal" style="grid-column:6; grid-row:12;"></div>
-
-<!-- Unión -->
-<div class="line-vertical" style="grid-column:6; grid-row:7 / 12;"></div>
-
-
+<!-- Vertical de P1 (fila 5) -->
+<div class="line-vertical" style="grid-column:5; grid-row:5;"></div>
+<!-- Vertical de P1 (fila 6) -->
+<div class="line-vertical" style="grid-column:5; grid-row:6;"></div>
+<!-- Vertical de P1 (fila 7) -->
+<div class="line-vertical" style="grid-column:5; grid-row:7;"></div>
+<!-- Horizontal hacia semis -->
+<div class="line-horizontal" style="grid-column:6; grid-row:8;"></div>
+<!-- Vertical de P1 (fila 4) -->
+<div class="line-vertical" style="grid-column:5; grid-row:8;"></div>
+<!-- Vertical de P1 (fila 5) -->
+<div class="line-vertical" style="grid-column:5; grid-row:9;"></div>
+<!-- Vertical de P1 (fila 5) -->
+<div class="line-vertical" style="grid-column:5; grid-row:10;"></div>
+<!-- Vertical de P1 (fila 5) -->
+<div class="line-vertical" style="grid-column:5; grid-row:11;"></div>
+<!-- Horizontal hacia semis -->
+<div class="line-horizontal" style="grid-column:5; grid-row:12;"></div>
 
 <!-- ========================================================
      FINAL (COLUMN 7 – filas 7–8)
 ======================================================== -->
 
 <div class="match-box" style="grid-column:7; grid-row:7 / 9;">
-    <b>Final</b><br>
-    Ganador SF1 vs Ganador SF2<br>
-    Fecha: __ | Hora: __ | Marcador: __
+            <div class="match-title"><span class="icon">🏆</span>Final</div>
+            <div class="team-line">Ganador S1 vs Ganador S2</div>
+            <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
 
@@ -233,9 +243,9 @@ h1 {
 ======================================================== -->
 
 <div class="match-box" style="grid-column:7; grid-row:14 / 16;">
-    <b>3er Lugar</b><br>
-    Perderdor SF1 vs Perdedor SF2<br>
-    Fecha: __ | Hora: __ | Marcador: __
+                <div class="match-title"><span class="icon">🥉</span>3er Lugar</div>
+                <div class="team-line">Perdedor S1 vs Perdedor S2</div>
+                <div class="meta">Fecha: ___ | Hora: ___ | Marcador: ___</div>
 </div>
 
 
